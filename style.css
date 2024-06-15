@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+ } 
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+.page-header {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page-header h1 {
+    font-size: 3em;
+    font-weight: 900;
+    color: #abc2da;
+}
+
+.doctor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; 
+    width: 100%;
+    max-width: 1200px;
+}
+
+@media (min-width: 768px) {
+    .doctor-card {
+        flex-direction: row;
+    }
+    .doctor-photo {
+        width: 120px; 
+    }
+    .doctor-info {
+        display: flex;
+        flex-grow: 1;
+        padding: 20px;
+       color: #000000;
+       border: 2px solid  black;
+       font-family: 'Times New Roman', Times, serif;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .info {
+        flex-grow: 1;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 10px;
+        align-items: end;
+    }
+}
+
+.doctor-photo {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+}
+
+@media (min-width: 768px) {
+    .doctor-photo {
+        border-bottom: none;
+        border-right: 1px solid #eee;
+    }
+}
+
+.info h3, .info p {
+    margin: 0;
+}
+
+input[type="date"],
+input[type="time"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #18173d;
+    color:rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+button:hover {
+    background-color: #495182;
+}
+
+.doctor-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px; 
+    background-color: rgb(204, 229, 237);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px; /* Add space at the bottom of each card */
+    margin-top: 20px; /* Add space at the top of each card */
+    overflow: hidden; 
+    border: 8px solid rgb(255, 255, 255);
+}
+
+
+
+.page-header {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+
+.doctor-photo {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    object-position: top; 
+    border-bottom: 1px solid #eee;
+}
+
+
+.footer {
+
+    height: 10vh;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: 2px solid black ;
+     color: black;
+     background:  #E8EEF6;
+}
+
+.navbar {
+    background-color: #E8EEF6;
+    display: flex;
+    justify-content: space-around;
+    height: 11vh;
+    width: 105%;
+    margin: -20px -20px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+    padding-top: 20px;
+}
+
+.navbar h1 {
+    display: inline-block;
+    margin-right: 10px; /* Adjust margin as needed */
+    color: red;
+    
+}
+
+.navbar h1 a {
+    text-decoration: none;
+    color: black; /* Adjust link color as needed */
+}

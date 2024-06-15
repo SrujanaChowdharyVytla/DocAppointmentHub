@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>DocAppointmentHub</h1>
+        <h1><a href="home.html" style="border: 2px solid black; background-color: white; border-radius: 10px; font-size: 20px;padding-left: 5px; padding-right: 5px;">Home</a></h1>
+        <h1><a href="aboutus.html"  style="border: 2px solid black; background-color: white; border-radius: 10px ; font-size: 20px;padding-left: 5px; padding-right: 5px;">About Us</a></h1>
+        <h1><a href="specialist.html"  style="border: 2px solid black; background-color: white; border-radius: 10px; font-size: 20px;padding-left: 5px; padding-right: 5px;">Specialists</a></h1>
+        <h1><a href="login.html"  style="border: 2px solid black; background-color: white; border-radius: 10px; font-size: 20px;padding-left: 5px; padding-right: 5px;">Login</a></h1>
+    </div>
+    <header class="page-header">
+        <h1>Endocrinologists</h1>
+    </header>
+    <main>
+        <div class="doctor-container">
+            <!-- Repeated doctor-card blocks -->
+            <!-- Example for Dr. John Doe -->
+            <div class="doctor-card">
+                <img src="image copy 48.png" alt="Dr. John Doe" class="doctor-photo">
+                <div class="doctor-info">
+                    <div class="info">
+                        <h3 style="color:rgb(158, 60, 68);">Dr. Janith</h3>
+                        <p style="color:rgb(139, 130, 130);">Endocrinologist</p>
+                        <p>Experience: 10 years</p>
+                        <p>Working Hospital: Apolo Hospital</p>
+                        <p>Location: Vizag, India</p>
+                    </div>
+                    <form onsubmit="bookAppointment(); return false;">
+                        <label for="appointment-date">Choose your date:</label>
+                        <input type="date" id="appointment-date" name="appointment-date" required>
+                        <label for="appointment-time">Choose your time:</label>
+                        <input type="time" id="appointment-time" name="appointment-time" required>
+                        <button type="submit">Book an Appointment</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Repeat above block with different data for each doctor -->
+            <!-- Example block repeated 9 more times with unique IDs for form elements if necessary -->
+            <div class="doctor-card">
+                <img src="image copy 49.png" alt="Dr. John Doe" class="doctor-photo">
+                <div class="doctor-info">
+                    <div class="info">
+                        <h3 style="color:rgb(158, 60, 68);">Dr. Madhu</h3>
+                        <p style="color:rgb(139, 130, 130);"> Endocrinologist</p>
+                        <p>Experience: 13 years</p>
+                        <p>Working Hospital: Manipal Hospital</p>
+                        <p>Location: Kakinada, India</p>
+                    </div>
+                    <form onsubmit="bookAppointment(); return false;">
+                        <label for="appointment-date">Choose your date:</label>
+                        <input type="date" id="appointment-date" name="appointment-date" required>
+                        <label for="appointment-time">Choose your time:</label>
+                        <input type="time" id="appointment-time" name="appointment-time" required>
+                        <button type="submit">Book an Appointment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="image copy 50.png" alt="Dr. John Doe" class="doctor-photo">
+                <div class="doctor-info">
+                    <div class="info">
+                        <h3 style="color:rgb(158, 60, 68);">Dr. Laxman</h3>
+                        <p style="color:rgb(139, 130, 130);">Endocrinologist</p>
+                        <p>Experience: 10 years</p>
+                        <p>Working Hospital: Star Hospital</p>
+                        <p>Location: Hyderabad, India</p>
+                    </div>
+                    <form onsubmit="bookAppointment(); return false;">
+                        <label for="appointment-date">Choose your date:</label>
+                        <input type="date" id="appointment-date" name="appointment-date" required>
+                        <label for="appointment-time">Choose your time:</label>
+                        <input type="time" id="appointment-time" name="appointment-time" required>
+                        <button type="submit">Book an Appointment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="image copy 51.png" alt="Dr. John Doe" class="doctor-photo">
+                <div class="doctor-info">
+                    <div class="info">
+                        <h3 style="color:rgb(158, 60, 68);">Dr. Ravi</h3>
+                        <p style="color:rgb(139, 130, 130);">Endocrinologist</p>
+                        <p>Experience: 6 years</p>
+                        <p>Working Hospital: Care Hospital</p>
+                        <p>Location: Benguluru, India</p>
+                    </div>
+                    <form onsubmit="bookAppointment(); return false;">
+                        <label for="appointment-date">Choose your date:</label>
+                        <input type="date" id="appointment-date" name="appointment-date" required>
+                        <label for="appointment-time">Choose your time:</label>
+                        <input type="time" id="appointment-time" name="appointment-time" required>
+                        <button type="submit">Book an Appointment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="image copy 52.png" alt="Dr. John Doe" class="doctor-photo">
+                <div class="doctor-info">
+                    <div class="info">
+                        <h3 style="color:rgb(158, 60, 68);">Dr. Venkat</h3>
+                        <p style="color:rgb(139, 130, 130);">Endocrinologist</p>
+                        <p>Experience: 8 years</p>
+                        <p>Working Hospital: Aims Hospital</p>
+                        <p>Location: Kadapa, India</p>
+                    </div>
+                    <form onsubmit="bookAppointment(); return false;">
+                        <label for="appointment-date">Choose your date:</label>
+                        <input type="date" id="appointment-date" name="appointment-date" required>
+                        <label for="appointment-time">Choose your time:</label>
+                        <input type="time" id="appointment-time" name="appointment-time" required>
+                        <button type="submit">Book an Appointment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="image copy 53.png" alt="Dr. John Doe" class="doctor-photo">
+                <div class="doctor-info">
+                    <div class="info">
+                        <h3 style="color:rgb(158, 60, 68);">Dr. Srikanth</h3>
+                        <p style="color:rgb(139, 130, 130);">Endocrinologist</p>
+                        <p>Experience: 19 years</p>
+                        <p>Working Hospital: Trust Hospital</p>
+                        <p>Location: Hyderabad, India</p>
+                    </div>
+                    <form onsubmit="bookAppointment(); return false;">
+                        <label for="appointment-date">Choose your date:</label>
+                        <input type="date" id="appointment-date" name="appointment-date" required>
+                        <label for="appointment-time">Choose your time:</label>
+                        <input type="time" id="appointment-time" name="appointment-time" required>
+                        <button type="submit">Book an Appointment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="image copy 54.png" alt="Dr. John Doe" class="doctor-photo">
+                <div class="doctor-info">
+                    <div class="info">
+                        <h3 style="color:rgb(158, 60, 68);">Dr. Tanya</h3>
+                        <p style="color:rgb(139, 130, 130);">Endocrinologist</p>
+                        <p>Experience: 15 years</p>
+                        <p>Working Hospital: Avion Hospital</p>
+                        <p>Location: Hyderabad, India</p>
+                    </div>
+                    <form onsubmit="bookAppointment(); return false;">
+                        <label for="appointment-date">Choose your date:</label>
+                        <input type="date" id="appointment-date" name="appointment-date" required>
+                        <label for="appointment-time">Choose your time:</label>
+                        <input type="time" id="appointment-time" name="appointment-time" required>
+                        <button type="submit">Book an Appointment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="image copy 55.png" alt="Dr. John Doe" class="doctor-photo">
+                <div class="doctor-info">
+                    <div class="info">
+                        <h3 style="color:rgb(158, 60, 68);">Dr. Ramya</h3>
+                        <p style="color:rgb(139, 130, 130);">Endocrinologist</p>
+                        <p>Experience: 7 years</p>
+                        <p>Working Hospital: Lakshmi Hospital</p>
+                        <p>Location: Kakinada, India</p>
+                    </div>
+                    <form onsubmit="bookAppointment(); return false;">
+                        <label for="appointment-date">Choose your date:</label>
+                        <input type="date" id="appointment-date" name="appointment-date" required>
+                        <label for="appointment-time">Choose your time:</label>
+                        <input type="time" id="appointment-time" name="appointment-time" required>
+                        <button type="submit">Book an Appointment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="image copy 56.png" alt="Dr. John Doe" class="doctor-photo">
+                <div class="doctor-info">
+                    <div class="info">
+                        <h3 style="color:rgb(158, 60, 68);">Dr. Sharmila</h3>
+                        <p style="color:rgb(139, 130, 130);">Endocrinologist</p>
+                        <p>Experience: 13 years</p>
+                        <p>Working Hospital: Apolo Hospital</p>
+                        <p>Location: Vijayawada, India</p>
+                    </div>
+                    <form onsubmit="bookAppointment(); return false;">
+                        <label for="appointment-date">Choose your date:</label>
+                        <input type="date" id="appointment-date" name="appointment-date" required>
+                        <label for="appointment-time">Choose your time:</label>
+                        <input type="time" id="appointment-time" name="appointment-time" required>
+                        <button type="submit">Book an Appointment</button>
+                    </form>
+                </div>
+            </div>
+           
+           
+        </div>
+    </main>
+    
+    <div class="footer">&copy; 2024 Doctor Booking. All rights reserved.</div>
+    <script>
+        function bookAppointment() {
+            alert("Your appointment is booked!");
+        }
+    </script>
+</body>
+</html>
+

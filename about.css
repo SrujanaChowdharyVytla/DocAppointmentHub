@@ -1,0 +1,263 @@
+* {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.body {
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+.navbar {
+  background-color: #E8EEF6;
+  display: flex;
+  justify-content: space-around;
+  height: 11vh;
+  width: 105%;
+  margin: -20px -20px;
+  margin-bottom: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 10px;
+}
+
+.navbar h1 {
+  display: inline-block;
+  margin-right: 10px; /* Adjust margin as needed */
+  color: red;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+
+.navbar h1 a {
+  text-decoration: none;
+  color: black; /* Adjust link color as needed */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ body { 
+  background-image: url('bg.jpg'); 
+ 
+} 
+ 
+.container2 { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background-color: rgb(255, 255, 255,0.1); 
+    color: rgb(175, 241, 241);
+    width: 100%;
+    border-radius: 30px;
+    
+   
+ } 
+ .box { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  
+  
+ 
+  
+} 
+
+ .text{ 
+     margin-bottom: 40px; 
+    
+ } 
+ 
+ 
+.faq-section { 
+   
+   background-color: rgb(135, 206, 250,0.2);
+    padding: 20px; 
+    border-radius: 15px; 
+    width: 90%; 
+    margin-top: 20px;
+   
+    
+    
+     
+} 
+
+.faq-container { 
+    max-width: 1000px; 
+    margin: 20px auto; 
+    background-image: url('https://media.istockphoto.com/id/1682074275/photo/doctor-woman-and-tablet-for-hospital-healthcare-advice-and-support-for-results-exam-and-test.webp?b=1&s=170667a&w=0&k=20&c=F9Z9qWm5oBuNDfXR8P9LlHA2F30F9b1LL05MtU3zFs8=');
+}
+   
+  .faq-item { 
+    margin-bottom: 20px; 
+    border: 4px solid #ffffff; 
+    border-radius: 5px; 
+    overflow: hidden; 
+    
+  } 
+   
+  .question { 
+    background-color: #1e334c; 
+    color: #E8EEF6;
+    padding: 10px; 
+   font-weight: lighter; 
+   font-size: 1.5rem;
+   
+  } 
+  .answer { 
+    padding: 10px; 
+    background-color: rgb(219, 241, 254); 
+    color: #020000; 
+    font-size: 1.3rem;
+    
+  } 
+ 
+.box { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgb(199, 227, 255,0.0); 
+    width: 100%; 
+    color: white; 
+    border-radius: 15px;  
+    padding-left: 20px; 
+    padding-right: 20px; 
+    margin-top: 30px ;
+} 
+.box text h1 {
+  font-size: 4rem;
+}
+
+.box text p{
+  font-size: 2rem;
+}
+.answer { 
+    padding: 10px; 
+    display: none; /* Hide answer by default */ 
+  } 
+   
+  .arrow { 
+    cursor: pointer; 
+    float: right; 
+    font-size: 20px; 
+    transition: transform 0.3s ease; 
+  } 
+   
+  .arrow.active { 
+    transform: rotate(180deg); 
+  } 
+   
+  .faq-item:hover .answer { 
+    display: block; /* Display answer when faq-item is hovered */ 
+  } 
+   
+  .faq-item:hover .arrow { 
+    transform: rotate(180deg); /* Rotate arrow when faq-item is hovered */ 
+  }
+ 
+ 
+ 
+.background-image { 
+    background-image: url('image.png'); /* Replace 'your-image.jpg' with your actual image
+    URL */ 
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
+    width: 100%; 
+    height: 400px; /* Adjust height as needed */ 
+} 
+ 
+
+
+
+
+.doccontainer {
+  position: relative;
+  width: 95%; /* Full width of the screen */
+  height: 80vh; /* Full height of the viewport */
+  margin: 50px; /* Remove default margin */
+}
+
+.docimage-div {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Full viewport height */
+  background-image: url('https://d2jx2rerrg6sh3.cloudfront.net/images/news/ImageForNews_706380_16466673508378523.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Styles for the text overlay */
+.doctext-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%; /* This is half the height of the image div */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  color: black; /* Adjust text color as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.doctext-div h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 4rem;
+  color: #1e334c;
+  
+}
+
+.doctext-div p {
+  font-weight: normal;
+  margin: 0;
+  font-size: 1.3rem;
+  color: #1e334c;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  background-color: #1d2b3b;
+  border: 35px solid rgb(199, 227, 255);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  
+  height: 10vh;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 2px solid black ;
+   color: black;
+   background:  #E8EEF6;
+}
+
+
+
+
+
+
+  
+
+    
